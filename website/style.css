@@ -1,0 +1,322 @@
+/*
+    STYLE CSS:
+    One stylesheet to rule them all.
+    
+    selector ( property:value )
+    
+    */
+
+body {
+  /* simple background color */
+    background-color: #fff;
+   
+}
+
+/* ----- =structure ----- */
+ 
+.container-fluid {
+    width: 80%;
+    max-width: 980px;
+    min-width: 320px;
+    margin: auto;
+    color: #fff;
+      
+}
+.container-fluid :after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+img, embed, object, video {
+    max-width: 100%;
+    height : auto;
+    background: #fff;
+}
+
+
+header {
+    margin-top: -20px;
+    height: 90px;
+    background-color: #30417c;
+}
+
+
+/* ----- =Logo ----- */
+
+header h1  {
+    color: #C24C0A; 
+    z-index: 1;
+    font-family: 'Tangerine', cursive;
+	font-size: 60px;
+    text-shadow: 2px 2px 2px #aaa;
+	padding-top: 25px;
+    padding-left: 10px;
+    position: absolute; 
+    text-decoration: none; 
+    float: left;
+	margin: 0 0 0 0;
+}
+header h1 a {
+	text-decoration: none;
+	color: #fff;
+    opacity: .9
+}
+#logo {
+    margin-left: 10px;
+    border: #C04000 solid 1px;
+    box-shadow: 0 2px 0 #ffe697;
+    -moz-box-shadow: 0 2px 0 #ffe697; /* Firefox 3.6 and earlier */
+    -webkit-box-shadow: 0 2px 0 #ffe697; /* Safari and Chrome */
+    width: 215px;
+    position:absolute;
+    margin-top: 76px; 
+}
+/* ----- =style ----- */
+
+
+nav {
+    display: flex;
+    height: 100%;
+    
+}
+h2 {
+    color: #C04000;
+    font-size: 2.3em;
+ }
+h3 {
+    color: #C04000;
+    line-height: 2.0em;
+    font-size: 1.2em;
+}
+p {
+    color: #C04000;
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+ul {
+    color: #000;
+    font-size: .90em;
+    
+}
+li {
+    list-style: circle;
+    line-height: 2.0em;
+    font-size: 1.2em;
+}
+hr {
+    width: 80%;
+    height: 2px;
+	background-color: #ffe697;
+    margin-top: 50px;
+	border: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* ----- =style / home page ----- */
+
+span  {
+    z-index: 100;
+    display: block;
+    background-color: #000;
+    opacity: .5;
+    width: 400px;
+    height: 50px;
+    margin-left: 10px;    
+    margin-top: -78px;
+    padding-top: 15px;
+    color: #fff;
+    line-height: 1.5em;
+    font-size: 1.0em;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+}
+.about, img, .career, img {
+    background: transparent;
+    border: 10px solid #397eb2;
+    margin-top: 6em;
+    margin-bottom: 4em;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+#about, h2, #career, h2 {
+    color: blue;
+    margin-top: 4em;
+}
+/* ----- =navigation ----- */
+
+#top-nav {
+    color: #ffe697;
+    float: right;
+    margin-top: 25px; 
+    margin-right: 20px;
+}
+#top-nav ul, #top-nav ul li {
+    display: inline-block;
+   list-style: none; 
+}
+
+#top-nav ul a {
+    font: 200 32px/1.5 'Helvetica Neue', sans-serif;
+    margin-left: 40px;
+    color: #ffe697;
+}
+ 
+#top-nav ul a:hover {
+    color: #a3831e;
+}
+/* ----- =buttons ----- */
+
+#back {
+    
+    float: right;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+.j2, #j1 {
+    display: inline-block;
+    padding: 20px;
+} 
+
+button {
+    color: #fff;   
+} 
+#j1:hover, .j2:hover, #back:hover {
+    color: yellow; 
+}
+#back, #j1, .j2 {
+    padding: 10px;
+    margin-top: 40px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #397eb2;
+    -webkit-box-shadow: 10px 10px 15px 0px #000;
+    -moz-box-shadow: 10px 10px 15px 0px #000;
+    box-shadow: 10px 10px 15px 0px #000;
+    
+}
+.j2 {
+    margin-left: 50px;
+}
+.minheight {
+    min-height: 220px;
+}
+/* ----- =jquery ----- */
+
+.photos, #carouseljq {
+    display: none;
+}
+.photos li {
+    list-style: none; 
+    float: right;
+    margin-top: -80px;
+    margin-bottom: -50px;
+    padding-right: 20px;
+    margin-left: -10px;
+    
+}
+.photos span {
+    width: 93%;
+    position: relative;
+    margin-top: -120px; 
+}
+
+/* ----- #carousel ----- */
+.item img {
+    background: transparent;
+    border: 10px solid #397eb2;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+.item {
+    background: transparent;
+}
+.item h3 {
+    color: #fff;
+    border: none;
+}
+.carousel-inner {
+
+    background: transparent;
+}
+.carousel-control {
+    background-color: transparent;
+    background:  inherit;
+}
+.glyphicon, img {
+    
+ background: transparent;
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    background: transparent;
+    display: block;
+    line-height: 1;
+}
+/* ----- =footers ----- */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    height: 70px;
+    background-color: #000;
+}
+footer p {
+    color: #ffe697;
+    font-size: 1.0em;
+    line-height: 1.2em;
+}
+footer:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+ 
+/* -- Media Queries ----- */
+
+@media (max-width : 1024px) {
+ 
+/* Treat as 1/2 column */
+.one_fourth {
+    width: 45.5%;
+}
+ 
+.wrapper {
+    width: 90%; 
+}
+}
+    
+@media (max-width : 500px) { 
+    
+/* Change About Me and Career sections padding */
+.about, h2, .career, h2 {
+    padding-top: 1em;
+}
+}
+
+
+/* -- Column Row (aka Clearfix) -- */
+ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
