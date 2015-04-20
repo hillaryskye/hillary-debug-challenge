@@ -270,6 +270,16 @@ button {
     display: block;
     line-height: 1;
 }
+
+/* ----- =contact page ----- */
+#contact {
+    margin-top:  6em;
+    min-height: 530px;
+}
+
+
+
+
 /* ----- =footers ----- */
 
 footer {
@@ -291,17 +301,6 @@ footer:after {
  
 /* -- Media Queries ----- */
 
-@media (max-width : 1024px) {
- 
-/* Treat as 1/2 column */
-.one_fourth {
-    width: 45.5%;
-}
- 
-.wrapper {
-    width: 90%; 
-}
-}
     
 @media (max-width : 500px) { 
     
