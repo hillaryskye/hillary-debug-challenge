@@ -12,7 +12,7 @@
     <!-- Optional theme -->
     
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script <script src="http://code.jquery.com/jquery-1.11.1.js" /></script>
         <script src="js/bootstrap.min.js"></script>
 
     <!-- Latest compiled and minified jQuery-->
@@ -28,36 +28,22 @@
     <script>
         $(document).ready(function() {            
             $("#button1").on("click", "#j1", function() {
-            $(".photos").slideToggle().addClass("minheight");
-        });
+                $(".photos").slideToggle().addClass("minheight");
+            });
         $(".photos").on("mouseenter", "li", function() {
             $(this).find("span").slideDown();
         
-        });
+            });
         });
     </script><!-- End of jquery exercise 1 -->
     <script>
         $(document).ready(function() {
-        $("#button1").on("click", ".j2", function() {
-        $("#carouseljq").toggle();
-    });
+            $("#button1").on("click", ".j2", function() {
+                $("#carouseljq").toggle();
             });
-    </script>
-
-<!-- it works the same with all jquery version from 1.x to 2.x -->
-    <script src="jquery.min.js"></script>
-    <script src="jssor.slider.mini.js"></script>
-    <script>
-        jQuery(document).ready(function ($) {
-            var options = {};
-            var jssor_slider1 = new $JssorSlider$('slider1_container', options);
         });
-</script>
-    <script>
-    $('.carousel').carousel({
-        interval: 3000
-    })
-</script>
+    </script><!-- End of jquery exercise 2 -->
+    
 </head>
 
 <body>
@@ -87,7 +73,7 @@
         <div class="row">
             <div class="col-xs-6 col-md-4">
                 
-                    <a id="about1"><img src="images/hillary_300.gif" class="about" alt="About"/></a>
+                    <a id="about1"><img src="/images/hillary_300.gif" class="about" alt="About"/></a>
             </div><!-- End of col-xs-6 -->
     <div class="col-xs-6">
         <h2 id="about">About Me</h2>
@@ -123,7 +109,7 @@
         <hr>
         <div class="row">
         <div class="col-xs-6"> 
-    <a id="career1"><img src="images/grad2_250.jpg" class="career" alt="Career"/></a>
+    <a id="career1"><img src="/images/grad2_250.jpg" class="career" alt="Career"/></a>
             </div><!-- End of col-xs-6 -->
             <div class="col-xs-6">
     <h2 id="career">Career</h2>
@@ -156,11 +142,11 @@
             JQUERY EXERCISE 1
             <ul class="photos">
     <li>
-      <img src="images/fiddle1_240.jpg" alt="Fiddle Playing">
+      <img src="/images/fiddle1_240.jpg" alt="Fiddle Playing">
       <span>Fiddle Playing</span>
     </li>
     <li>
-      <img src="images/bobcat_240.jpg" alt="Bobcat">
+      <img src="/images/bobcat_240.jpg" alt="Bobcat">
       <span>Skye Bobcat Services</span>
                 </li>
             </ul>
@@ -180,19 +166,19 @@
   <!-- Carousel Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-        <img src="images/hike_960.jpg" alt="Hike near Leyden in Arvada along crest" id="c1">
+        <img src="/images/hike_960.jpg" alt="Hike near Leyden in Arvada along crest" id="c1">
       <div class="carousel-caption">
           <h3>Hike in Arvada near Leyden</h3>
       </div>
     </div>
     <div class="item">
-      <img src="images/marissa_sarah_960.jpg" alt="Skye Bobcat Services">
+      <img src="/images/marissa_sarah_960.jpg" alt="Skye Bobcat Services">
       <div class="carousel-caption">
           <h3>Me with family</h3>
       </div>
     </div>
     <div class="item">
-      <img src="images/bath_remodel_960.jpg" alt="Fiddle Playing">
+      <img src="/images/bath_remodel_960.jpg" alt="Fiddle Playing">
       <div class="carousel-caption">
           <h3>Bath Remodel</h3>
       </div>
